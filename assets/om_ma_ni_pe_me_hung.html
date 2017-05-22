@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>OM MA NI PEME HUNG</title>
+  <link rel="shortcut icon" type="image/png" href="/public/favicon.png"/>
+
+  <style>
+    body {
+      background-color: gray;
+    }
+
+    #container {
+      width: 100%;
+      height: 700px;
+      -webkit-perspective: 800px;
+      -webkit-perspective-origin: 50% 225px;
+    }
+
+    #stage {
+      width: 100%;
+      height: 100%;
+      -webkit-transition: -webkit-transform 2s;
+      -webkit-transform-style: preserve-3d;
+      -webkit-transform: translateZ(-200px);
+    }
+    
+    #shape {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      top: 160px;
+      margin: 0 auto;
+      -webkit-transform-style: preserve-3d;
+      -webkit-animation: spin 8s infinite linear;
+    }
+    
+    .plane {
+      position: absolute;
+      width: 234px;
+      height: 280px;
+      border: 1px solid white;
+      text-align: center;
+      padding-top: 20px;
+      -webkit-border-radius: 12px;
+      -webkit-box-sizing: border-box;
+      -webkit-transition: -webkit-transform 2s, opacity 2s;
+      -webkit-backface-visibility: hidden;
+    }
+
+    @-webkit-keyframes spin {
+      from { -webkit-transform: rotateY(0); }
+      to   { -webkit-transform: rotateY(-360deg); }
+    }
+
+    .one {
+      color: white;
+      background-color: blue;
+      -webkit-transform: translateZ(380px);
+    }
+
+    .two {
+      color: green;
+      background-color: white;
+      -webkit-transform: rotateY(36deg) translateZ(380px);
+    }
+
+    .three {
+      color: yellow;
+      background-color: red;
+      -webkit-transform: rotateY(72deg) translateZ(380px);
+    }
+
+    .four {
+      color: red;
+      background-color: green;
+      -webkit-transform: rotateY(108deg) translateZ(380px);
+    }
+
+    .five {
+      color: blue;
+      background-color: yellow;
+      -webkit-transform: rotateY(144deg) translateZ(380px);
+    }
+
+    .six {
+      color: white;
+      background-color: blue;
+      -webkit-transform: rotateY(180deg) translateZ(380px);
+    }
+
+    .seven {
+      color: green;
+      background-color: white;
+      -webkit-transform: rotateY(216deg) translateZ(380px);
+    }
+
+    .eight {
+      color: yellow;
+      background-color: red;
+      -webkit-transform: rotateY(252deg) translateZ(380px);
+    }
+
+    .nine {
+      color: red;
+      background-color: green;
+      -webkit-transform: rotateY(288deg) translateZ(380px);
+    }
+
+    .ten {
+      color: blue;
+      background-color: yellow;
+      -webkit-transform: rotateY(324deg) translateZ(380px);
+    }
+
+    .main-text {
+      height: 210px;
+      font-size: 130px;
+    }
+
+    .sub-text {
+      padding-top: 15px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <div id="stage">
+      <div id="shape">
+        <div class="plane one">
+          <div class="main-text">ཨོཾ</div>
+          <div class="sub-text">OM</div>
+        </div>
+        <div class="plane two">
+          <div class="main-text">མ</div>
+          <div class="sub-text">MA</div>
+        </div>
+        <div class="plane three">
+          <div class="main-text">ཎི</div>
+          <div class="sub-text">NI</div>
+        </div>
+        <div class="plane four">
+          <div class="main-text">པདྨེ</div>
+          <div class="sub-text">PEME</div>
+        </div>
+        <div class="plane five">
+          <div class="main-text">ཧཱུྃ</div>
+          <div class="sub-text">HUNG</div>
+        </div>
+        <div class="plane six">
+          <div class="main-text">ཨོཾ</div>
+          <div class="sub-text">OM</div>
+        </div>
+        <div class="plane seven">
+          <div class="main-text">མ</div>
+          <div class="sub-text">MA</div>
+        </div>
+        <div class="plane eight">
+          <div class="main-text">ཎི</div>
+          <div class="sub-text">NI</div>
+        </div>
+        <div class="plane nine">
+          <div class="main-text">པདྨེ</div>
+          <div class="sub-text">PEME</div>
+        </div>
+        <div class="plane ten">
+          <div class="main-text">ཧཱུྃ</div>
+          <div class="sub-text">HUNG</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <a href="/">Home</a>
+</body>
+</html>
